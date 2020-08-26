@@ -1,6 +1,6 @@
-$(function(){
+$(function() {
   // トップへ戻るボタンの表示制御
-  $(window).scroll(function(){
+  $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('.backToTop').fadeIn();
     } else {
@@ -9,7 +9,7 @@ $(function(){
   });
 
   // トップへ戻るボタンのクリック
-  $('.backToTop').click(function() {
+  $('.backToTop').on('click', function() {
     $('body,html').animate({
       scrollTop:0
     },500);
